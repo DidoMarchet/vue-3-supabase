@@ -6,18 +6,16 @@ module.exports = {
   build: {
     lib: {
       entry: path.resolve(__dirname, 'lib/main.js'),
-      name: 'vue-3-supabase'
+      name: 'vue-3-supabase',
     },
     rollupOptions: {
       external: ['vue'],
       output: {
         globals: {
-          vue: 'vue'
-        }
-      }
-    }
+          vue: 'vue',
+        },
+      },
+    },
   },
-  plugins: [
-    vue()
-  ]
+  plugins: [vue()],
 }
