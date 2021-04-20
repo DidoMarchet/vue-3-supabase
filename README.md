@@ -52,7 +52,7 @@ More references [here](https://supabase.io/docs/reference/javascript/initializin
 
 In the **Option API** you can use `this.$supabase` to access the Supabase.js Client:
 
-``` javascript
+``` vue
 <template>
   // Your HTML Stuff
 </template>
@@ -74,7 +74,7 @@ export default {
 
 In the **Composition API** you can use `inject('supabase')` to access the Supabase.js Client:
 
-``` javascript
+``` vue
 <template>
   // Your HTML Stuff
 </template>
