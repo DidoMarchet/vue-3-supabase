@@ -29,7 +29,7 @@ const app = createApp(App)
 // Use supabase
 app.use(supabase, {
   supabaseUrl: 'https://xxxxxxxxxxxxxxxxx.supabase.co', // actually you can use something like import.meta.env.VITE_SUPABASE_URL
-  supabaseKey: 'xxxxx__xxxxx___xxxxx___xxxxx', // actually you can use sompething like import.meta.env.VITE_SUPABASE_KEY,
+  supabaseKey: 'xxxxx__xxxxx___xxxxx___xxxxx', // actually you can use something like import.meta.env.VITE_SUPABASE_KEY,
   options: {}
 })
 
