@@ -1,0 +1,52 @@
+{
+  "name": "vue-3-supabase",
+  "version": "0.0.1",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/vue-3-supabase.umd.js",
+  "module": "./dist/vue-3-supabase.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/vue-3-supabase.es.js",
+      "require": "./dist/vue-3-supabase.umd.js"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "lint:fix": "eslint --fix --ext .js,.vue --ignore-path .gitignore ."
+  },
+  "peerDependencies": {
+    "vue": "^3.0.5"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^1.11.6"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^1.1.5",
+    "@vue/compiler-sfc": "^3.0.5",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-vue": "^7.0.0",
+    "prettier": "^2.2.1",
+    "vite": "^2.1.0"
+  },
+  "description": "Vue 3 Supabase.js client plugin",
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DidoMarchet/vue-3-supabase.git"
+  },
+  "author": "Davide Marchet",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DidoMarchet/vue-3-supabase/issues"
+  },
+  "homepage": "https://github.com/DidoMarchet/vue-3-supabase#readme"
+}
