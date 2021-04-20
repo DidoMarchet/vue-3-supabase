@@ -1,6 +1,6 @@
 {
   "name": "vue-3-supabase",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "files": [
     "dist"
   ],
@@ -35,7 +35,7 @@
     "prettier": "^2.2.1",
     "vite": "^2.1.0"
   },
-  "description": "Vue 3 Supabase.js client plugin",
+  "description": "Simple Vue 3 wrap for Supabase.js Client build with Vitejs",
   "directories": {
     "lib": "lib"
   },
