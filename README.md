@@ -27,6 +27,7 @@ It takes three params as argument :
 ``` javascript
 import { createApp } from 'vue'
 import App from './App.vue'
+
 // Import supabase
 import supabase from 'vue-3-supabase'
 
