@@ -39,6 +39,11 @@
   "directories": {
     "lib": "lib"
   },
+  "keywords": [
+    "vue",
+    "vue3",
+    "supabase-js"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/DidoMarchet/vue-3-supabase.git"
