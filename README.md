@@ -1,109 +1,27 @@
-# Vue 3 Supabase.js
+# Vue 3 + Typescript + Vite
 
-:hamburger: Simple [Vue 3](https://github.com/vuejs/docs-next) wrap for [Supabase.js Client](https://supabase.io/docs/reference/javascript/supabase-client) build with [Vitejs](https://github.com/vitejs/vite)
+This template should help get you started developing with Vue 3 and Typescript in Vite.
 
-### Table of content:
-- [Install](#install-plugin)
-- [Usages](#usages)
-- [Methods](#methods)
+## Recommended IDE Setup
 
-Install the package via npm:
+[VSCode](https://code.visualstudio.com/) + [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur). Make sure to enable `vetur.experimental.templateInterpolationService` in settings!
 
-``` bash
-npm i vue-3-supabase
-```
+### If Using `<script setup>`
 
-# Install
+[`<script setup>`](https://github.com/vuejs/rfcs/pull/227) is a feature that is currently in RFC stage. To get proper IDE support for the syntax, use [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar) instead of Vetur (and disable Vetur).
 
-It's Simple! In your `main.js` add the following:
+## Type Support For `.vue` Imports in TS
 
-``` javascript
-import { createApp } from 'vue'
-import App from './App.vue'
+Since TypeScript cannot handle type information for `.vue` imports, they are shimmed to be a generic Vue component type by default. In most cases this is fine if you don't really care about component prop types outside of templates. However, if you wish to get actual prop types in `.vue` imports (for example to get props validation when using manual `h(...)` calls), you can use the following:
 
-// Import supabase
-import supabase from 'vue-3-supabase'
+### If Using Volar
 
-const app = createApp(App)
+Run `Volar: Switch TS Plugin on/off` from VSCode command palette.
 
-// Use supabase
-app.use(supabase, {
-  supabaseUrl: 'https://xxxxxxxxxxxxxxxxx.supabase.co', // actually you can use something like import.meta.env.VITE_SUPABASE_URL
-  supabaseKey: 'xxxxx__xxxxx___xxxxx___xxxxx', // actually you can use something like import.meta.env.VITE_SUPABASE_KEY,
-  options: {}
-})
+### If Using Vetur
 
-app.mount('#app')
-```
-
-It takes three params as argument :
-
-`supabaseUrl`: the unique **required** Supabase URL which is supplied when you create a new project in your project dashboard.
-
-`supabaseKey`: the unique **required** Supabase Key which is supplied when you create a new project in your project dashboard.
-
-`options`: additional parameters **not required**
-
-More references [here](https://supabase.io/docs/reference/javascript/initializing)
-
-# Usages
-
-### Options API
-
-In the **Option API** you can use `this.$supabase` to access the Supabase.js Client:
-
-``` vue
-<template>
-  // Your HTML Stuff
-</template>
-
-<script>
-export default {
-  async mounted () {
-    const { user, session, error } = await this.$supabase.auth.signUp({
-      email: 'user@provider.com',
-      password: 'myawesomepassword',
-    })
-    console.log(user, session, error)
-  }
-}
-</script>
-```
-
-### Composition API
-
-In the **Composition API** you can use `inject('supabase')` to access the Supabase.js Client:
-
-``` vue
-<template>
-  // Your HTML Stuff
-</template>
-
-<script setup>
-import { inject, onMounted } from 'vue'
-
-const supabase = inject('supabase')
-
-onMounted(async () => {
-  const { user, session, error } = await supabase.auth.signUp({
-    email: 'user@provider.com',
-    password: 'myawesomepassword',
-  })
-  console.log(user, session, error)
-})
-</script>
-```
-
-# Methods
-
-Here the methods references from official doc:
-
-- [Auth](https://supabase.io/docs/reference/javascript/auth-signup)
-- [Data](https://supabase.io/docs/reference/javascript/select)
-- [Realtime](https://supabase.io/docs/reference/javascript/subscribe)
-- [Storage](https://supabase.io/docs/reference/javascript/storage-createbucket)
-- [Modifiers](https://supabase.io/docs/reference/javascript/using-modifiers)
-- [Filters](https://supabase.io/docs/reference/javascript/using-filters)
-
-Enjoy :punch:
-
+1. Install and add `@vuedx/typescript-plugin-vue` to the [plugins section](https://www.typescriptlang.org/tsconfig#plugins) in `tsconfig.json`
+2. Delete `src/shims-vue.d.ts` as it is no longer needed to provide module info to Typescript
+3. Open `src/main.ts` in VSCode
+4. Open the VSCode command palette
+5. Search and run "Select TypeScript version" -> "Use workspace version"

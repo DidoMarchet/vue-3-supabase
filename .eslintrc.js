@@ -9,11 +9,12 @@ module.exports = {
     'prettier',
     'plugin:prettier/recommended',
     'eslint:recommended',
+    "@vue/typescript/recommended"
   ],
   plugins: ['prettier'],
   parserOptions: {
     ecmaVersion: 2020,
-    parser: 'babel-eslint',
+    parser: "@typescript-eslint/parser",
     sourceType: 'module'
   },
   rules: {
