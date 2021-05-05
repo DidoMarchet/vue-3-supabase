@@ -1,9 +1,13 @@
-import { App } from "vue";
+import { App, inject } from "vue";
 import { Params } from "./@types/index";
 import { createClient } from "@supabase/supabase-js";
 export interface IVueSupabase {
   install(app: App, params: Params): void;
 }
+
+const supabaseInjectionKey = Symbol();
+
+export const useSupabase = () => inject(supabaseInjectionKey);
 
 export default {
   install: function (app: App, params: Params): void {
@@ -11,6 +15,6 @@ export default {
     const supabase = createClient(supabaseUrl, supabaseKey, options);
 
     app.config.globalProperties.$supabase = supabase;
-    app.provide("supabase", supabase);
+    app.provide(supabaseInjectionKey, supabase);
   },
 };
