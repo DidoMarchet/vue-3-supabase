@@ -7,7 +7,7 @@ export interface IVueSupabase {
 
 const supabaseInjectionKey: InjectionKey<SupabaseClient> = Symbol();
 
-export const useSupabase = () => inject(supabaseInjectionKey);
+export const useSupabase = (): typeof inject => inject(supabaseInjectionKey);
 
 export default {
   install: function (app: App, params: Params): void {
