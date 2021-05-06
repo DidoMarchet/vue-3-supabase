@@ -72,7 +72,7 @@ export default {
 
 ### Composition API
 
-In the **Composition API** you can use `inject('supabase')` to access the Supabase.js Client:
+In the **Composition API** you can use `useSupabase()` hook to access the Supabase.js Client:
 
 ``` vue
 <template>
