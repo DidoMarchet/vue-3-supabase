@@ -22,22 +22,22 @@
     "vue": "^3.0.5"
   },
   "dependencies": {
-    "@supabase/supabase-js": "^1.11.6"
+    "@supabase/supabase-js": "^1.29.1"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.31.1",
-    "@typescript-eslint/parser": "^4.31.1",
-    "@vitejs/plugin-vue": "^1.6.2",
-    "@vue/compiler-sfc": "^3.2.11",
+    "@typescript-eslint/eslint-plugin": "^4.33.0",
+    "@typescript-eslint/parser": "^4.33.0",
+    "@vitejs/plugin-vue": "^1.10.2",
+    "@vue/compiler-sfc": "^3.2.26",
     "@vue/eslint-config-typescript": "^7.0.0",
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-prettier": "^3.3.1",
-    "eslint-plugin-vue": "^7.17.0",
-    "prettier": "^2.4.0",
-    "typescript": "^4.4.3",
-    "vite": "^2.5.7",
+    "eslint-plugin-vue": "^7.20.0",
+    "prettier": "^2.5.1",
+    "typescript": "^4.5.4",
+    "vite": "^2.7.10",
     "vue-tsc": "^0.0.8"
   },
   "description": "Simple Vue 3 wrap for Supabase.js Client build with Vitejs",
