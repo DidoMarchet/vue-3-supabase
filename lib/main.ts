@@ -1,9 +1,6 @@
 import { App, inject, InjectionKey } from "vue";
 import { Params } from "./@types/index";
 import { createClient, SupabaseClient } from "@supabase/supabase-js";
-export interface IVueSupabase {
-  install(app: App, params: Params): void;
-}
 
 const supabaseInjectionKey: InjectionKey<SupabaseClient> = Symbol();
 

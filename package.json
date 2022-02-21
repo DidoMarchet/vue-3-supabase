@@ -38,6 +38,7 @@
     "prettier": "^2.5.1",
     "typescript": "^4.5.5",
     "vite": "^2.7.13",
+    "vite-plugin-dts": "^0.9.9",
     "vue-tsc": "^0.0.8"
   },
   "description": "Simple Vue 3 wrap for Supabase.js Client build with Vitejs",
