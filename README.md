@@ -1,6 +1,6 @@
 # Vue 3 Supabase.js
 
-:hamburger: Simple [Vue 3](https://github.com/vuejs/docs-next) wrap for [Supabase.js Client](https://supabase.io/docs/reference/javascript/supabase-client) build with [Vitejs](https://github.com/vitejs/vite)
+:hamburger: Simple [Vue 3](https://github.com/vuejs/docs-next) wrap for [Supabase.js Client (v2)](https://supabase.io/docs/reference/javascript/supabase-client) build with [Vitejs](https://github.com/vitejs/vite)
 
 ### Table of content:
 - [Install](#install-plugin)
