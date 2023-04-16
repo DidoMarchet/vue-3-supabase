@@ -4,3 +4,4 @@ declare module "@vue/runtime-core" {
     $supabase: IVueSupabase;
   }
 }
+

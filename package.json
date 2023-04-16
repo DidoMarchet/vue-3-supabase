@@ -1,6 +1,6 @@
 {
   "name": "vue-3-supabase",
-  "version": "2.2.4",
+  "version": "2.2.5",
   "files": [
     "dist"
   ],
@@ -22,7 +22,7 @@
     "vue": "^3.0.5"
   },
   "dependencies": {
-    "@supabase/supabase-js": "^1.35.7"
+    "@supabase/supabase-js": "^2.2.2"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.33.0",
@@ -59,8 +59,5 @@
   "bugs": {
     "url": "https://github.com/DidoMarchet/vue-3-supabase/issues"
   },
-  "homepage": "https://github.com/DidoMarchet/vue-3-supabase#readme",
-  "dependencies": {
-    "@supabase/supabase-js": "^2.2.2"
-  }
+  "homepage": "https://github.com/DidoMarchet/vue-3-supabase#readme"
 }
