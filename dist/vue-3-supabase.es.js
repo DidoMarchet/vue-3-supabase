@@ -1140,29 +1140,34 @@ class PostgrestClient {
     });
   }
 }
-const _from = "websocket@^1.0.34";
+const _args = [
+  [
+    "websocket@1.0.34",
+    "/Users/Dido/Desktop/Test/vue-3-supabase"
+  ]
+];
+const _from = "websocket@1.0.34";
 const _id = "websocket@1.0.34";
 const _inBundle = false;
 const _integrity = "sha512-PRDso2sGwF6kM75QykIesBijKSVceR6jL2G8NGYyq2XrItNC2P5/qL5XeR056GhA+Ly7JMFvJb9I312mJfmqnQ==";
 const _location = "/websocket";
 const _phantomChildren = {};
 const _requested = {
-  type: "range",
+  type: "version",
   registry: true,
-  raw: "websocket@^1.0.34",
+  raw: "websocket@1.0.34",
   name: "websocket",
   escapedName: "websocket",
-  rawSpec: "^1.0.34",
+  rawSpec: "1.0.34",
   saveSpec: null,
-  fetchSpec: "^1.0.34"
+  fetchSpec: "1.0.34"
 };
 const _requiredBy = [
   "/@supabase/realtime-js"
 ];
 const _resolved = "https://registry.npmjs.org/websocket/-/websocket-1.0.34.tgz";
-const _shasum = "2bdc2602c08bf2c82253b730655c0ef7dcab3111";
-const _spec = "websocket@^1.0.34";
-const _where = "/Users/dido/Desktop/Dido Git/vue-3-supabase/node_modules/@supabase/realtime-js";
+const _spec = "1.0.34";
+const _where = "/Users/Dido/Desktop/Test/vue-3-supabase";
 const author = {
   name: "Brian McKelvey",
   email: "theturtle32@gmail.com",
@@ -1172,7 +1177,6 @@ const browser$1 = "lib/browser.js";
 const bugs = {
   url: "https://github.com/theturtle32/WebSocket-Node/issues"
 };
-const bundleDependencies = false;
 const config = {
   verbose: false
 };
@@ -1191,7 +1195,6 @@ const dependencies = {
   "utf-8-validate": "^5.0.2",
   yaeti: "^0.0.6"
 };
-const deprecated = false;
 const description = "Websocket Client & Server Library implementing the WebSocket protocol as specified in RFC 6455.";
 const devDependencies = {
   "buffer-equal": "^1.0.0",
@@ -1233,6 +1236,7 @@ const scripts = {
 };
 const version$5 = "1.0.34";
 var require$$0 = {
+  _args,
   _from,
   _id,
   _inBundle,
@@ -1242,17 +1246,14 @@ var require$$0 = {
   _requested,
   _requiredBy,
   _resolved,
-  _shasum,
   _spec,
   _where,
   author,
   browser: browser$1,
   bugs,
-  bundleDependencies,
   config,
   contributors,
   dependencies,
-  deprecated,
   description,
   devDependencies,
   directories,
