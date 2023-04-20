@@ -1,8 +1,10 @@
 import { App } from "vue";
+import type { SupabaseClientOptions } from "@supabase/supabase-js";
+
 export interface Params {
   supabaseUrl: string;
   supabaseKey: string;
-  options?: never;
+  options?: SupabaseClientOptions<'public'>;
 }
 
 export interface IVueSupabase {
