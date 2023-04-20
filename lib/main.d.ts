@@ -5,3 +5,7 @@ declare module "@vue/runtime-core" {
   }
 }
 
+export function useSupabase(): IVueSupabase;
+
+declare const supabasePlugin: IVueSupabase;
+export default supabasePlugin;
